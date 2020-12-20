@@ -1,0 +1,7 @@
+<?php
+// object approach
+
+
+
+
+?>
