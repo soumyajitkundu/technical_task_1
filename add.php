@@ -43,17 +43,16 @@ if (isset($_POST['sub'])) {
     $name = $_POST['name'];
     $desc = $_POST['desc1'];
     $status = $_POST['status'];
-    $created = $_POST['created'];
     $updated = $_POST['updated'];
 
 
 
-    $sql = "INSERT INTO category(`name`,`desc1`,`status`,`created`,`updated`) VALUES ('$name','$desc1','$status','$created','$updated')";
+    @$sql = "INSERT INTO category(`name`,`desc1`,`status`,`updated`) VALUES ('$name','$desc1','$status','$updated')";
     $run = mysqli_query($con, $sql);
     if ($run == true) {
 ?>
 <script>
-alert('Data Inserted Successfully.');
+alert('New Category Inserted');
 </script>
 <?php
     } else {
