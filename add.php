@@ -3,38 +3,34 @@
 <?php require_once('lib/dbOperations.php'); ?>
 
 <fieldset>
-    <legend>Add Category</legend>
+    <legend align="center">Add New Category Details</legend>
 
     <form action="add.php" method="post" class="login">
 
         <table width="100%">
             <tr>
-                <td> Name : </td>
+                <td>Name : </td>
                 <td><input type="text" name="name" value="" /></td>
             </tr>
             <tr>
-                <td> Desc : </td>
+                <td>Description : </td>
                 <td><input type="text" name="desc1" value="" /></td>
             </tr>
             <tr>
-                <td> Status : </td>
+                <td>Status (Active/Inactive) : </td>
                 <td><input type="text" name="status" value="" /></td>
             </tr>
             <tr>
-                <td> Updated : </td>
+                <td>Updated (T&D) : </td>
                 <td><input type="date" name="updated" value="" /></td>
-            </tr>
-            <tr>
-
             </tr>
             <tr>
                 <td> &nbsp;</td>
                 <td><input type="submit" name="sub" value=" Insert " /></td>
             </tr>
             <tr>
-
-                <td><a href="categories.php">Back</a></td>
-
+                <td></br></br></br></br></td>
+                <td><a href="categories.php">Go Back to Categories Page</a></td>
             </tr>
         </table>
     </form>
