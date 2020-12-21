@@ -36,24 +36,17 @@
     </form>
 </fieldset>
 
-
 <?php
-
-if (isset($_POST['sub'])) {
+if (isset($_POST['sub'])) 
+{
     $name = $_POST['name'];
     $desc = $_POST['desc1'];
     $status = $_POST['status'];
     $updated = $_POST['updated'];
-
-
-
     @$sql = "INSERT INTO category(`name`,`desc1`,`status`,`updated`) VALUES ('$name','$desc1','$status','$updated')";
     $run = mysqli_query($con, $sql);
     if ($run == true) {
 ?>
-<script>
-alert('New Category Inserted');
-</script>
 <?php
     } else {
         echo ("error:" . mysqli_error($con));
