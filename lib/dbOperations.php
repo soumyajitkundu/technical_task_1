@@ -109,7 +109,7 @@
                 echo "not updated";
             }
         }
-        if($entity == 'user'){
+        if($entity == 'comment'){
              $sql = "UPDATE `comment` SET `person`= '$data[person]',`content`= '$data[content]',,`article`= '$data[article]',`status` = '$data[status]'  where `id` = $primary ";
             $res = mysqli_query($con,$sql);
             if(mysqli_num_rows($res)>0){
